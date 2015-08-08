@@ -34,6 +34,9 @@ echo ''
 echo "Sound good? ^D to continue, ^C to exit."
 cat >/dev/null
 
+echo "Testing that the new key is in the ssh agent..."
+ssh-add -L | (grep -q "$NEW_PUBLIC_KEY_MATERIAL" || (echo "Sad! It is not. Run ssh-add." ; exit 1))
+
 echo "Continuing!"
 echo ""
 echo ""
