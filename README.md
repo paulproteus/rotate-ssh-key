@@ -20,6 +20,8 @@ This tool will:
 
 * Assume the old key is still in `ssh-agent` (you can add it if not), and
 
+* Assume you use `ssh-agent`, and
+
 * Assume you have generated a new key in `~/.ssh/id_rsa` and `~/.ssh/id_rsa.pub`.
 
 ## Actions
